@@ -3,5 +3,13 @@
   tasks:
     - name: juniperDemo
       debug:
-        msg: "Hello World!"
+        msg: "Hello Virtual MX"
 
+		- name: run multiple commands and evaluate the output
+		  junipernetworks.junos.junos_command:
+		    commands:
+		    - show version
+		    - show interfaces
+		    wait_for:
+		    - result[0] contains Juniper
+		    - result[1] contains Loopback0
