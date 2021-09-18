@@ -1,7 +1,7 @@
-- name: Hello World Sample
-  hosts: all
+- name: Sample Juniper Playbook
+  hosts: juniper
   tasks:
-    - name: Hello Message
+    - name: juniperDemo
       debug:
         msg: "Hello World!"
 
