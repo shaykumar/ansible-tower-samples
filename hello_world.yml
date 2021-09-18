@@ -4,7 +4,7 @@
     - name: juniperDemo
       debug:
         msg: "Hello Virtual MX"
-    - name: run multiple commands and evaluate the output
+    - name: juniperDemo
       junipernetworks.junos.junos_command:
         commands:
           - show version
