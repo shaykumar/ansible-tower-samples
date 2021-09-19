@@ -3,7 +3,7 @@
 - name: Network Getting Started First Playbook
   connection: local
   gather_facts: false
-  hosts: juniper
+  hosts: all
   roles:
     - juniper.junos
   vars:
