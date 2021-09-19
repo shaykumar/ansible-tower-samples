@@ -4,5 +4,5 @@
     - name: Get Hostname
       ansible.builtin.shell: hostname
     - name: get venv
-      ansible.builtin.shell: echo $VIRTUAL_ENV
+      ansible.builtin.shell: which python3
     
