@@ -6,7 +6,7 @@
     - name: get pwd
       ansible.builtin.shell: pwd
     - name: Get Hostname
-      ansible.builtin.shell: hostname
+      ansible.builtin.shell: hostname -i
     - name: get ifconfig
       ansible.builtin.shell: ifconfig
       
