@@ -1,8 +1,5 @@
 roles:
-    - Juniper.junos
-  connection: local
-  gather_facts: no
-  
+    - Juniper.junos  
 - name: Sample Juniper Playbook
   hosts: juniper
   tasks:
