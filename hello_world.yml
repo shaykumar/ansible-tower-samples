@@ -1,3 +1,10 @@
-- name: run show version on remote devices
-  junipernetworks.junos.junos_command:
-    commands: show version
+- name: Hello World Sample
+  hosts: all
+  tasks:
+    - name: Hello Message
+      debug:
+        msg: "Hello World!"
+        
+    - name: run show version on remote devices
+      junipernetworks.junos.junos_command:
+        commands: show version
