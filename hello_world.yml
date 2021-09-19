@@ -1,3 +1,11 @@
+---
+- name: juniper example
+  hosts: juniper
+roles:
+    - Juniper.junos
+  connection: local
+  gather_facts: no
+  
 - name: Sample Juniper Playbook
   hosts: juniper
   tasks:
