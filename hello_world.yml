@@ -1,4 +1,7 @@
 - name: Hello World Sample
+  roles:
+    - Juniper.junos  
+    
   hosts: all
   tasks:
     - name: Hello Message
