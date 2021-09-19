@@ -9,6 +9,9 @@
   vars:
     ansible_ssh_user: jnpr
   tasks:
+  
+    - name: intall junos-eznc
+      ansible.builtin.shell: pip install junos-eznc
 
     - name: run show version on remote devices
       juniper_junos_command:
