@@ -1,13 +1,19 @@
-- name: Hello World Sample
+---
+
+- name: Network Getting Started First Playbook
+  connection: local
+  gather_facts: false
+  hosts: juniper
   roles:
-    - Juniper.junos  
-    
-  hosts: all
+    - juniper.junos
+  vars:
+    ansible_ssh_user: jnpr
   tasks:
-    - name: Hello Message
-      debug:
-        msg: "Hello World!"
-        
+
     - name: run show version on remote devices
-      junipernetworks.junos.junos_command:
-        commands: show version
+      juniper_junos_command:
+        commands:
+          - show version
+          - show route
+        provider:
+          port: 22
