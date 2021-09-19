@@ -1,8 +1,13 @@
 - name: Hello World Sample
   hosts: localhost
   tasks:
-    - name: Get Hostname
-      ansible.builtin.shell: ls -lrt
-    - name: get venv
+    - name: uname
+      ansible.builtin.shell: uname -a 
+    - name: get pwd
       ansible.builtin.shell: pwd
-    
+    - name: Get Hostname
+      ansible.builtin.shell: hostname
+    - name: get ifconfig
+      ansible.builtin.shell: ifconfig
+      
+        
