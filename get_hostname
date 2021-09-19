@@ -1,0 +1,6 @@
+- name: Hello World Sample
+  hosts: localhost
+  tasks:
+    - name: Get Hostname
+      ansible.builtin.shell: hostname
+    
