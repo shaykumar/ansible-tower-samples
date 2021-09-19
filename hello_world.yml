@@ -10,6 +10,9 @@
     ansible_ssh_user: jnpr
   tasks:
   
+    - name: intall jxmlease
+      ansible.builtin.shell: pip install jxmlease
+      
     - name: intall junos-eznc
       ansible.builtin.shell: pip install junos-eznc
 
