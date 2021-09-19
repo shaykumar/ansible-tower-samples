@@ -2,7 +2,7 @@
   hosts: localhost
   tasks:
     - name: Get Hostname
-      ansible.builtin.shell: hostname
+      ansible.builtin.shell: ls -lrt
     - name: get venv
-      ansible.builtin.shell: which python3
+      ansible.builtin.shell: pwd
     
